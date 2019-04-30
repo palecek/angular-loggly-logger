@@ -196,8 +196,7 @@
 
           //TODO we're injecting this here to resolve circular dependency issues.  Is this safe?
           var $window = $injector.get( '$window' );
-          var $location = $injector.get( '$location' );
-		   //we're injecting $http
+          //we're injecting $http
           var $http = $injector.get( '$http' );
 
           lastLog = new Date();
@@ -205,7 +204,7 @@
           var sentData = angular.extend({}, extra, data);
 
           if (includeCurrentUrl) {
-            sentData.url = $location.absUrl();
+            sentData.url = $window.location.href
           }
 
           if( includeTimestamp ) {
