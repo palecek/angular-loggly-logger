@@ -1,6 +1,6 @@
 {
-  "name": "angular-loggly-logger",
-  "version": "0.3.4",
+  "name": "csas-angular-loggly-logger",
+  "version": "0.3.5",
   "main": "index.js",
   "description": "An AngularJs service and $log decorator for Loggly",
   "repository": {
